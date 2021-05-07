@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afshin Kazemi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+
+        <!-- header -->
+
+        <div class="header">
+          <div class="header-container">
+            <h1>Afshin Kazemi</h1><br /> 
+            
+            <h2 class="header-jobtitle"> Web<br />Developer</h2>
+          </div>
+        </div>
+
+        <!-- sections -->
+
+        <div class="section-header">
+          <div class="section-header-container">
+            <div class="section-title">Who i am?</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- about -->
+
+        <section class="about">
+          <div class="about-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              quasi sapiente nisi minus neque non explicabo, magni cumque enim
+              aut!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+              eaque nobis. Quidem sint ratione quos veniam!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </section>
+
+        <div class="whitespace"></div>
+
+        <!-- projects -->
+
+        <div class="section-header">
+          <div class="section-header-container">
+            <div class="section-title">What i did?</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <section class="project">
+          <div class="project-container">
+            <div>
+              <nav class="menu">
+                <div class="menu__item">
+                  <a class="menu__item-link">html & css &#9660;</a>
+                  <div class="marquee">
+                    <div class="marquee__inner">
+                      <span>html & css</span>
+                      <span>html & css</span>
+                      <span>html & css</span>
+                      <span>html & css</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <ol>
+                    <li><a href="#" target="_blank">not any project yet :(</a></li>
+                  </ol>
+                </div>
+
+                
+
+                <div class="menu__item">
+                  <a class="menu__item-link">javascript &#9660;</a>
+                  <div class="marquee">
+                    <div class="marquee__inner">
+                      <span>javascript</span>
+                      <span>javascript</span>
+                      <span>javascript</span>
+                      <span>javascript</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <ol>
+                    <li><a href="#" target="_blank">not any project yet :(</a></li>
+                  </ol>
+                </div>
+
+                <div class="menu__item">
+                  <a class="menu__item-link">mern &#9660;</a>
+                  <div class="marquee">
+                    <div class="marquee__inner">
+                      <span> mern </span>
+                      <span> mern </span>
+                      <span> mern </span>
+                      <span> mern </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <ol>
+                    <li><a href="#" target="_blank">not any project yet :(</a></li>
+                  </ol>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </section>
+
+        <div class="whitespace"></div>
+
+        <!-- technologies-->
+
+        <div class="section-header">
+          <div class="section-header-container">
+            <div class="section-title">What i know?</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <section class="clients">
+          <div class="clients-container">
+            <p>
+              <br />
+              <ul class="tech">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React JS</li>
+                <li>Node JS</li>
+                <li>MongoDB</li>
+                <li>Docker</li>
+                <li>MicroServices</li>
+                <li>React Native</li>
+              </ul>
+              <br />
+            </p>
+          </div>
+        </section>
+
+        <div class="whitespace"></div>
+
+        <!-- social  -->
+        <div class="section-header">
+          <div class="section-header-container">
+            <div class="section-title">How contact me?</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <section class="socials">
+          <div class="socials-container">
+            <div class="socials-id">
+              <a href="mailto:soyafshin@gmail.com" target="_blank">Email</a>
+            </div>
+            <div class="socials-id">
+              <a href="https://github.com/AfshinKazemi" target="_blank"
+                >Github</a
+              >
+            </div>
+            <div class="socials-id">
+              <a href="https://twitter.com/soyAfshin" target="_blank"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- footer -->
+
+        <div class="footer">
+          <div class="navbar">
+            <div class="navbar-container">
+              <div class="site-title">by Afshin</div>
+              <div class="site-year">2021</div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("menu__item");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
